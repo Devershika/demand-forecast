@@ -30,10 +30,33 @@ The preprocessing pipeline ensures that the data is clean, consistent and suitab
 * Log transformation of demand (log1p) to stabilize variance
 
 Feature engineering, including:
-* Lag features (1-day, 7-day, 14-day)
+* Lag features (1 day, 7 day, 14 day)
 * Time-based features (day, week, month, weekday)
 * Encoding categorical variables using label encoding
 * Ensuring no data leakage through strict temporal train–test splitting
+
+## Models Implemented
+### Baseline Models
+The following baseline models are implemented to establish a performance reference:
+* Linear Regression
+* Holt-Winters Exponential Smoothing
+* ARIMA (1,1,1)
+* Prophet (Univariate)
+* Prophet (Multivariate)
+* XG Boost
+
+
+### Fine-Tuned Models
+Each model is fine-tuned independently, using interpretable and statistically grounded techniques.
+1️. Linear Regression (Ridge-Regularized)
+  - Lag-based feature engineering to capture temporal dependencies
+  - Ridge regularization to mitigate multicollinearity
+  - Hyperparameter tuning via cross-validated alpha selection
+
+2️. Holt-Winters Exponential Smoothing
+  - Selection of additive vs multiplicative trend and seasonality
+  - Seasonality optimization (weekly/monthly patterns)
+  - Evaluation of smoothing parameters
 
 
 
