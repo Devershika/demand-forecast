@@ -5,8 +5,7 @@ This project focuses on demand forecasting at a granular level (Store ID × Prod
 The pipeline is designed to be:
 * Modular
 * Interpretable
-* Research-paper ready
-* Industry-aligned
+* Industry aligned
 
 
 ## Objectives
