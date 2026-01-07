@@ -43,11 +43,12 @@ The following baseline models are implemented to establish a performance referen
 * ARIMA (1,1,1)
 * Prophet (Univariate)
 * Prophet (Multivariate)
-* XG Boost
+* XGBoost
 
 
 ### Fine-Tuned Models
-Each model is fine-tuned independently, using interpretable and statistically grounded techniques.
+Each model is fine-tuned independently, using interpretable and statistically grounded techniques:
+
 1️. Linear Regression (Ridge-Regularized)
   - Lag-based feature engineering to capture temporal dependencies
   - Ridge regularization to mitigate multicollinearity
@@ -58,6 +59,22 @@ Each model is fine-tuned independently, using interpretable and statistically gr
   - Seasonality optimization (weekly/monthly patterns)
   - Evaluation of smoothing parameters
 
+3️. ARIMA 
+  - Stationarity testing using Augmented Dickey–Fuller (ADF) test
+  - Manual differencing to ensure stationarity
+  - Grid search over (p, d, q) using AIC minimization
+  - Residual diagnostics to validate assumptions
+  - Explicit baseline vs fine-tuned ARIMA comparison
 
+4️. Prophet (Univariate)
+  - Changepoint prior tuning to control trend flexibility
+  - Selective seasonality activation
+  - Noise reduction through regularization
 
+5️. Prophet (Multivariate)
+  - Correlation-based regressor selection
+  - Lagged external regressors
+  - Prior scale tuning for regressor influence
+
+6️. XGBoost
 
