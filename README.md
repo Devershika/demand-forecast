@@ -78,3 +78,16 @@ Each model is fine-tuned independently, using interpretable and statistically gr
 
 6️. XGBoost
 
+
+## Evaluation Metrics
+
+All models are evaluated using the following metrics:
+1. MAPE (Mean Absolute Percentage Error)
+Measures forecasting accuracy; lower values indicate better performance.
+2. R² Score (Coefficient of Determination)
+Measures how well the model explains demand variability.
+
+Evaluation is conducted:
+- At the Store,Product,Category,Region level
+- Aggregated per model
+- With baseline vs fine-tuned comparisons
