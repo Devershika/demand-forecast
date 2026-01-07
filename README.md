@@ -7,3 +7,12 @@ The pipeline is designed to be:
 * Interpretable
 * Research-paper ready
 * Industry-aligned
+
+
+## Objectives
+* Preserve store-level and product-level granularity
+* Implement baseline forecasting models
+* Perform step-by-step fine-tuning for each model
+* Compare baseline vs fine-tuned models
+* Identify the best-performing model per Store–Product
+* Provide a clean evaluation using MAPE and R²
