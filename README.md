@@ -75,7 +75,6 @@ Each model is fine-tuned independently, using interpretable and statistically gr
   - Lagged external regressors
   - Prior scale tuning for regressor influence
 
-6️. XGBoost
 
 
 ## Evaluation Metrics
