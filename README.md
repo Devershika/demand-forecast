@@ -42,7 +42,7 @@ The following baseline models are implemented to establish a performance referen
 * ARIMA (1,1,1)
 * Prophet (Univariate)
 * Prophet (Multivariate)
-* XGBoost
+
 
 
 ### Fine-Tuned Models
