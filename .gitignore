@@ -1,1 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
 demand_forecasting_env/
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# Packaging
+*.egg-info/
+*.whl
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (do NOT ignore if you intentionally commit sample data; adjust as needed)
+data/
+Data/
+data/raw/
+data/processed/
+data/sample/
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Testing / caches
+.pytest_cache/
+.coverage
+.cache/
+.mypy_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Misc
+*.bak
+*.swp
