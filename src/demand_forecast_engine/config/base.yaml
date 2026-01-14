@@ -14,18 +14,24 @@ project:
 data:
   date_col: Date
   target_col: Demand
+  
+  filter:
+     Region: "North"
+     Category: "Electronics"
+     Store ID: "S001"
+     Product ID: "P0001"
 
   hierarchy:
-    region_col: Region
-    category_col: Category
-    product_col: Product ID
-    store_col: Store ID
+    - Region
+    - Category
+    - Product ID
+    - Store ID
 
   frequency: D                # D (daily) | W (weekly) | M (monthly)
 
   train_test_split:
     method: time_based
-    train_end_date: "2023-12-31"
+    train_cut_off_date: "2023-11-30"
     forecast_horizon: 12      # number of periods to forecast
 
 # =========================
@@ -33,6 +39,29 @@ data:
 # =========================
 
 features:
+  
+  numeric:
+   - Price
+   - Competitor Pricing
+   - Inventory Level
+   - Units Sold
+   - Units Ordered
+  
+  categorical:
+   - Discount
+   - Seasonality 
+   - Epidemic
+   - Promotion
+   - Weather Condition
+
+  exclude:
+    - Date 
+    - Demand
+    - Store ID
+    - Product ID 
+    - Category 
+    - Region  
+  
   lags:
     enabled: true
     values: [1, 2, 4, 8, 12]

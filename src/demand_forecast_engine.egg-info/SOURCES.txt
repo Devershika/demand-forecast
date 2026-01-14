@@ -6,6 +6,11 @@ src/demand_forecast_engine.egg-info/SOURCES.txt
 src/demand_forecast_engine.egg-info/dependency_links.txt
 src/demand_forecast_engine.egg-info/requires.txt
 src/demand_forecast_engine.egg-info/top_level.txt
+src/demand_forecast_engine/evaluation/__init__.py
+src/demand_forecast_engine/evaluation/metrics.py
+src/demand_forecast_engine/feature_engineering/__init__.py
+src/demand_forecast_engine/feature_engineering/ts_feats.py
 src/demand_forecast_engine/models/__init__.py
+src/demand_forecast_engine/models/tree_models.py
 src/demand_forecast_engine/preprocessing/__init__.py
 src/demand_forecast_engine/preprocessing/dataset.py
