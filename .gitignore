@@ -25,7 +25,6 @@ ENV/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Data (do NOT ignore if you intentionally commit sample data; adjust as needed)
 
 # IDEs / editors
 .vscode/
