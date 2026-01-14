@@ -89,3 +89,9 @@ Evaluation is conducted:
 - At the Store,Product,Category,Region level
 - Aggregated per model
 - With baseline vs fine-tuned comparisons
+
+## Contributing
+Feel free to open issues or submit pull requests!
+
+## License
+This project is licensed under the MIT License.
