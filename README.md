@@ -104,6 +104,12 @@ Evaluation is conducted:
 - Aggregated per model
 - With baseline vs fine-tuned comparisons
 
+## Usage examples
+- Jupyter notebooks in Notebooks/ show end-to-end examples of preprocessing, feature creation, training and evaluation.
+- Python REPL example (after pip install -e .): python -c "import demand_forecast_engine as dfe; print('package imported:', dfe)"
+- To run a minimal preprocessing step (example pattern — adapt to available module APIs): python -c "from demand_forecast_engine.preprocessing.dataset import DatasetLoader; data=DataSetLoader(file_path,config_path),
+df=data.read_data() "
+
 ## Contributing
 Feel free to open issues or submit pull requests!
 
