@@ -1,4 +1,4 @@
-# Demand Forecasting using Time Series Models
+# Demand Forecasting using Time-Series & Machine Learning Algorithms
 
 ## Overview
 This project focuses on demand forecasting at a granular level (Store ID × Product ID) using multiple time series and machine learning models. The goal is to build baseline models, systematically fine-tune them, and perform a fair comparison using standard evaluation metrics.
