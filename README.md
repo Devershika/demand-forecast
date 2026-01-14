@@ -16,6 +16,20 @@ The pipeline is designed to be:
 * Identify the best-performing model per Store–Product
 * Provide a clean evaluation using MAPE and R²
 
+## Repo status and notes
+* Package code lives under src/demand_forecast_engine/.
+* Notebooks for exploration and reproducible experiments are in Notebooks/.
+* Data folders present: Data/ and data/ — 
+
+## Quick start
+* Clone the repo git clone https://github.com/Devershika/demand-forecast.git cd demand-forecast
+
+* Install dependencies
+  - Using pip: python -m venv venv source venv/bin/activate pip install -r requirements.txt
+  - Recommended editable install (to import package modules in src/): pip install -e .
+* Run notebooks
+  - Launch Jupyter and open notebooks in the Notebooks/ directory: jupyter lab
+  - Notebooks contain step-by-step exploration, preprocessing and modeling examples.
 
 ## Data Description
 The dataset consists of time-stamped transactional demand data collected across multiple stores and products. Each record corresponds to the demand observed for a specific product in a particular store on a given date. Along with the target variable Demand, the dataset includes several explanatory features such as pricing information, promotional indicators, competitor pricing, and contextual attributes like region, category, and weather conditions. These additional variables enable both univariate and multivariate forecasting approaches. The temporal nature of the data makes it suitable for classical time series modeling, while the presence of external regressors allows the exploration of more advanced models such as SARIMAX and Prophet with regressors.
