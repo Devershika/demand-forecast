@@ -90,7 +90,7 @@ Each model is fine-tuned independently, using interpretable and statistically gr
   - Lagged external regressors
   - Prior scale tuning for regressor influence
 
-6. XGBoost
+6 . XGBoost
   - Handles null values from rolling window and lag features automatically
   - Applies L1/L2 regularization without explicity adding penalties in the loss function
   - Industry standard for tabular data
