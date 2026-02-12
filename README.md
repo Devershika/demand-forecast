@@ -56,6 +56,7 @@ The following baseline models are implemented to establish a performance referen
 * ARIMA (1,1,1)
 * Prophet (Univariate)
 * Prophet (Multivariate)
+* XGBoost
 
 
 
@@ -88,6 +89,12 @@ Each model is fine-tuned independently, using interpretable and statistically gr
   - Correlation-based regressor selection
   - Lagged external regressors
   - Prior scale tuning for regressor influence
+
+6. XGBoost
+  - Handles null values from rolling window and lag features automatically
+  - Applies L1/L2 regularization without explicity adding penalties in the loss function
+  - Industry standard for tabular data
+ 
 
 
 
